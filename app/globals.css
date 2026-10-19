@@ -1,26 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Noto+Serif+Khmer:wght@300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf9f6;
+  --foreground: #121212;
+  --primary: #121212;
+  --primary-foreground: #faf9f6;
+  --accent: #c5a880;
+  --muted: #737373;
+  --card-bg: #ffffff;
+  --border-subtle: #eae5de;
+}
+
+.dark {
+  --background: #111111;
+  --foreground: #f4ece1;
+  --primary: #f4ece1;
+  --primary-foreground: #111111;
+  --accent: #d4b88f;
+  --muted: #999999;
+  --card-bg: #1a1a1a;
+  --border-subtle: #2a2a2a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-dm-mono), ui-monospace, SFMono-Regular, monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-card: var(--card-bg);
+  --color-border: var(--border-subtle);
+  --font-sans: "Plus Jakarta Sans", "Kantumruy Pro", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Cormorant Garamond", "Noto Serif Khmer", "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================================
+   Khmer Script Typography Protection
+   Khmer text must NEVER have letter-spacing (tracking), as letter-spacing
+   breaks sub-consonants (ជើង) and vowel diacritics into corrupted characters!
+   ========================================================================= */
+:lang(km),
+[lang="km"],
+html[lang="km"],
+html[lang="km"] * {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+}
+
+html[lang="km"] body {
+  font-family: "Kantumruy Pro", "Noto Sans Khmer", system-ui, -apple-system, sans-serif !important;
+  line-height: 1.7;
+}
+
+html[lang="km"] .font-serif,
+html[lang="km"] h1,
+html[lang="km"] h2,
+html[lang="km"] h3,
+html[lang="km"] h4 {
+  font-family: "Noto Serif Khmer", "Kantumruy Pro", serif !important;
+  letter-spacing: normal !important;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a88a5e;
 }
