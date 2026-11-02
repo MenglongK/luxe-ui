@@ -200,13 +200,13 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
               </div>
 
               {/* Title */}
-              <h1 className="text-2xl sm:text-3xl font-normal tracking-tight text-neutral-900 dark:text-white font-serif leading-tight">
+              <h1 className="text-2xl sm:text-3xl font-medium tracking-tight text-neutral-900 dark:text-white leading-tight">
                 {product.name}
               </h1>
 
               {/* Price */}
               <div className="mt-3 flex items-baseline gap-3">
-                <span className="text-2xl font-bold text-neutral-900 dark:text-white">
+                <span className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white">
                   ${product.price}
                 </span>
                 {product.compareAtPrice && (
@@ -462,7 +462,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
               <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase block mb-1">
                 Verified Feedback
               </span>
-              <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
                 {t("prod_reviews")}
               </h2>
             </div>
@@ -578,7 +578,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
               <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase block mb-1">
                 Atelier Pairing
               </span>
-              <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
                 {t("prod_recommended")}
               </h2>
             </div>
@@ -642,7 +642,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fadeIn">
           <div className="w-full max-w-lg bg-white dark:bg-[#1a1a1a] rounded-2xl shadow-2xl border border-[#eae5de] dark:border-neutral-800 overflow-hidden p-6 sm:p-8">
             <div className="flex items-center justify-between pb-4 border-b border-[#eae5de] dark:border-neutral-800">
-              <h3 className="text-lg font-semibold text-neutral-900 dark:text-white font-serif">
+              <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">
                 Write a Review
               </h3>
               <button

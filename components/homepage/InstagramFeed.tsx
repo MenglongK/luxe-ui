@@ -14,7 +14,7 @@ export default function InstagramFeed() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase">
               Community Gallery
             </span>
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1 font-serif">
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1">
               Worn by You • #LuxeAtelier
             </h2>
           </div>

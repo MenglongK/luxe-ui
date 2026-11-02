@@ -71,7 +71,7 @@ export default function CartDrawer({
         <div className="flex items-center justify-between p-5 border-b border-[#eae5de] dark:border-neutral-800 bg-white dark:bg-[#1a1a1a]">
           <div className="flex items-center gap-2">
             <ShoppingBag size={18} className="text-[#c5a880]" />
-            <h3 className="text-base font-semibold text-neutral-900 dark:text-white tracking-tight font-serif">
+            <h3 className="text-base font-semibold text-neutral-900 dark:text-white tracking-tight">
               {t("cart_title")} ({items.reduce((sum, item) => sum + item.quantity, 0)})
             </h3>
           </div>

@@ -35,7 +35,7 @@ export default function TestimonialsSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {pressQuotes.map((press) => (
               <div key={press.id} className="p-4 space-y-2">
-                <span className="text-base sm:text-lg font-bold tracking-[0.2em] text-neutral-900 dark:text-white font-serif block">
+                <span className="text-base sm:text-lg font-bold tracking-[0.2em] text-neutral-900 dark:text-white block">
                   {press.publication}
                 </span>
                 <p className="text-[11px] sm:text-xs text-neutral-500 dark:text-neutral-400 italic leading-relaxed">
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase">
               Collector Experiences
             </span>
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1 font-serif">
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1">
               Worn &amp; Revered Globally
             </h2>
           </div>
@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <blockquote className="text-base sm:text-lg md:text-xl font-light text-neutral-800 dark:text-neutral-200 leading-relaxed font-serif max-w-2xl">
+              <blockquote className="text-base sm:text-lg md:text-xl font-light text-neutral-800 dark:text-neutral-200 leading-relaxed max-w-2xl">
                 “{current.quote}”
               </blockquote>
 

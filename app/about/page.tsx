@@ -68,7 +68,7 @@ export default function AboutPage() {
               <Sparkles size={12} className="text-[#c5a880]" />
               <span>Heritage &amp; Philosophy</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl font-light tracking-tight text-white font-serif leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight">
               {t("about_title")}
             </h1>
             <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed font-light">
@@ -84,7 +84,7 @@ export default function AboutPage() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase block">
               The Atelier Manifesto
             </span>
-            <h2 className="text-2xl sm:text-4xl font-light tracking-tight text-neutral-900 dark:text-white font-serif leading-tight">
+            <h2 className="text-2xl sm:text-4xl font-light tracking-tight text-neutral-900 dark:text-white leading-tight">
               &ldquo;True elegance resides in what is omitted, not what is added.&rdquo;
             </h2>
             <p className="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed font-light">
@@ -129,7 +129,7 @@ export default function AboutPage() {
                   <span className="text-[10px] uppercase tracking-widest text-[#e4cbb0] font-semibold block">
                     Chief Architect &amp; Founder
                   </span>
-                  <strong className="text-lg sm:text-xl font-serif">Menglong Keo</strong>
+                  <strong className="text-lg sm:text-xl font-bold">Menglong Keo</strong>
                 </div>
               </div>
             </div>
@@ -141,12 +141,12 @@ export default function AboutPage() {
                 <span>{t("founder_section_title")}</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-light text-neutral-900 dark:text-white font-serif">
+              <h2 className="text-2xl sm:text-3xl font-light text-neutral-900 dark:text-white">
                 Engineering Modern Luxury: <br />
                 <span className="italic font-normal">Where Design Meets Systems</span>
               </h2>
 
-              <blockquote className="text-xs sm:text-sm italic font-serif text-neutral-700 dark:text-neutral-300 border-l-2 border-[#c5a880] pl-4 leading-relaxed">
+              <blockquote className="text-xs sm:text-sm italic text-neutral-700 dark:text-neutral-300 border-l-2 border-[#c5a880] pl-4 leading-relaxed">
                 &ldquo;{t("founder_quote")}&rdquo;
               </blockquote>
 
@@ -221,7 +221,7 @@ export default function AboutPage() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase block mb-1">
               Our Commitments
             </span>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
               The Three Pillars of LUXE
             </h2>
           </div>
@@ -231,7 +231,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-[#f4ece1] dark:bg-neutral-800 flex items-center justify-center text-[#9e7d53] dark:text-[#c5a880]">
                 <ShieldCheck size={24} />
               </div>
-              <h3 className="text-base font-semibold text-neutral-900 dark:text-white font-serif">
+              <h3 className="text-base font-semibold text-neutral-900 dark:text-white">
                 Traceable Italian Mills
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 leading-relaxed font-light">
@@ -244,7 +244,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-[#f4ece1] dark:bg-neutral-800 flex items-center justify-center text-[#9e7d53] dark:text-[#c5a880]">
                 <Award size={24} />
               </div>
-              <h3 className="text-base font-semibold text-neutral-900 dark:text-white font-serif">
+              <h3 className="text-base font-semibold text-neutral-900 dark:text-white">
                 Bespoke Artisanship
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 leading-relaxed font-light">
@@ -257,7 +257,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 rounded-xl bg-[#f4ece1] dark:bg-neutral-800 flex items-center justify-center text-[#9e7d53] dark:text-[#c5a880]">
                 <HeartHandshake size={24} />
               </div>
-              <h3 className="text-base font-semibold text-neutral-900 dark:text-white font-serif">
+              <h3 className="text-base font-semibold text-neutral-900 dark:text-white">
                 Lifetime Wardrobe Care
               </h3>
               <p className="text-xs text-neutral-600 dark:text-neutral-300 leading-relaxed font-light">
@@ -274,7 +274,7 @@ export default function AboutPage() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase block mb-1">
               Private Showrooms
             </span>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
               Visit Our Flagship Salons
             </h2>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">
@@ -307,7 +307,7 @@ export default function AboutPage() {
           <span className="text-[10px] uppercase tracking-[0.25em] text-[#c5a880] font-semibold block">
             Begin Your Capsule
           </span>
-          <h2 className="text-2xl sm:text-3xl font-light font-serif">
+          <h2 className="text-2xl sm:text-3xl font-light">
             Discover the Autumn / Winter &apos;26 Collection
           </h2>
           <p className="text-xs text-neutral-400 max-w-md mx-auto">

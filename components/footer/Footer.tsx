@@ -2,12 +2,19 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ArrowRight, CheckCircle2, Globe, ShieldCheck } from "lucide-react";
 import { footerSections, socialLinks } from "@/data";
 
 export default function Footer() {
+  const pathname = usePathname();
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
+
+  // If inside dashboard layout, hide storefront footer
+  if (pathname?.startsWith("/dashboard")) {
+    return null;
+  }
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,7 +33,7 @@ export default function Footer() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase">
               The Atelier Society
             </span>
-            <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white font-serif">
+            <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white">
               Join the Luxe Club &amp; Receive 15% Off
             </h3>
             <p className="text-xs sm:text-sm text-neutral-400 max-w-lg leading-relaxed">

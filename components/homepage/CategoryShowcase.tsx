@@ -17,7 +17,7 @@ export default function CategoryShowcase() {
             <span className="text-[10px] font-semibold tracking-[0.25em] text-[#c5a880] uppercase">
               Curated Wardrobe
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1 font-serif">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white mt-1">
               Shop by Category
             </h2>
           </div>

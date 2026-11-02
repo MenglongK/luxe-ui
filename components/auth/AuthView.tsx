@@ -144,7 +144,7 @@ export default function AuthView({ initialMode = "signin" }: AuthViewProps) {
             </div>
 
             <div>
-              <blockquote className="text-lg font-light text-neutral-100 font-serif leading-snug">
+              <blockquote className="text-lg font-light text-neutral-100 leading-snug">
                 “True elegance is not about standing out, but about being unforgettable.”
               </blockquote>
               <span className="text-xs text-neutral-400 mt-1 block tracking-wider uppercase">
@@ -219,7 +219,7 @@ export default function AuthView({ initialMode = "signin" }: AuthViewProps) {
 
             {/* Header Titles */}
             <div className="mb-8">
-              <h1 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+              <h1 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
                 {mode === "signin" ? t("auth_welcome_back") : t("auth_join_society")}
               </h1>
               <p className="mt-1 text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">
@@ -498,7 +498,7 @@ export default function AuthView({ initialMode = "signin" }: AuthViewProps) {
               <X size={18} />
             </button>
 
-            <h3 className="text-lg font-semibold text-neutral-900 dark:text-white font-serif mb-1">
+            <h3 className="text-lg font-semibold text-neutral-900 dark:text-white mb-1">
               Reset Atelier Credentials
             </h3>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-4">

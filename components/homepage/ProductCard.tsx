@@ -144,7 +144,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
 
           {/* Product Title */}
-          <h3 className="text-xs sm:text-sm font-semibold text-neutral-900 dark:text-white group-hover:text-[#c5a880] transition line-clamp-1">
+          <h3 className="text-xs sm:text-sm font-medium text-neutral-900 dark:text-white group-hover:text-[#c5a880] transition line-clamp-1">
             <Link href={`/products/${product.slug}`}>
               {product.name}
             </Link>
@@ -176,7 +176,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Pricing & Mobile Quick Add */}
         <div className="mt-3 pt-3 border-t border-[#eae5de] dark:border-neutral-800 flex items-center justify-between">
           <div className="flex items-baseline gap-2">
-            <span className="text-sm sm:text-base font-bold text-neutral-900 dark:text-white">
+            <span className="text-sm sm:text-base font-semibold tracking-tight text-neutral-900 dark:text-white">
               ${product.price}
             </span>
             {product.compareAtPrice && (

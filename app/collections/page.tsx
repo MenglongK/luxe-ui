@@ -88,7 +88,7 @@ export default function CollectionsPage() {
               <Sparkles size={12} className="text-[#c5a880]" />
               <span>Full Archive &amp; Lookbook</span>
             </div>
-            <h1 className="text-3xl sm:text-5xl font-light tracking-tight text-white font-serif leading-tight">
+            <h1 className="text-3xl sm:text-5xl font-light tracking-tight text-white leading-tight">
               Curated Atelier <br />
               <span className="italic font-normal text-[#f4ece1]">Wardrobe Collections</span>
             </h1>
@@ -102,7 +102,7 @@ export default function CollectionsPage() {
         {/* Browse by Department Visual Cards */}
         <div className="mb-14">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-white font-serif">
+            <h2 className="text-lg sm:text-xl font-semibold text-neutral-900 dark:text-white">
               Explore by Department
             </h2>
             <span className="text-xs text-neutral-500 dark:text-neutral-400">{categories.length} Categories</span>

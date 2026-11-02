@@ -128,7 +128,7 @@ export default function CheckoutPage() {
             <span>Order Confirmed</span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-semibold text-neutral-900 dark:text-white font-serif">
+          <h1 className="text-3xl sm:text-4xl font-semibold text-neutral-900 dark:text-white">
             {t("checkout_success_title")}
           </h1>
 
@@ -194,7 +194,7 @@ export default function CheckoutPage() {
               <ChevronRight size={12} />
               <span className="text-neutral-900 dark:text-white font-medium">{t("checkout_title")}</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white font-serif">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-neutral-900 dark:text-white">
               {t("checkout_title")}
             </h1>
           </div>
@@ -250,7 +250,7 @@ export default function CheckoutPage() {
             {/* 1. Contact Info */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#181818] border border-[#eae5de] dark:border-neutral-800 space-y-4 shadow-2xs">
               <div className="flex items-center justify-between">
-                <h2 className="text-base font-semibold text-neutral-900 dark:text-white font-serif flex items-center gap-2">
+                <h2 className="text-base font-semibold text-neutral-900 dark:text-white flex items-center gap-2">
                   <span className="w-5 h-5 rounded-full bg-[#121212] dark:bg-white text-white dark:text-black text-[10px] font-bold flex items-center justify-center">1</span>
                   <span>{t("checkout_contact")}</span>
                 </h2>
@@ -285,7 +285,7 @@ export default function CheckoutPage() {
 
             {/* 2. Shipping Address */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#181818] border border-[#eae5de] dark:border-neutral-800 space-y-4 shadow-2xs">
-              <h2 className="text-base font-semibold text-neutral-900 dark:text-white font-serif flex items-center gap-2">
+              <h2 className="text-base font-semibold text-neutral-900 dark:text-white flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-[#121212] dark:bg-white text-white dark:text-black text-[10px] font-bold flex items-center justify-center">2</span>
                 <span>{t("checkout_shipping_address")}</span>
               </h2>
@@ -406,7 +406,7 @@ export default function CheckoutPage() {
 
             {/* 3. Delivery Method */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#181818] border border-[#eae5de] dark:border-neutral-800 space-y-4 shadow-2xs">
-              <h2 className="text-base font-semibold text-neutral-900 dark:text-white font-serif flex items-center gap-2">
+              <h2 className="text-base font-semibold text-neutral-900 dark:text-white flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-[#121212] dark:bg-white text-white dark:text-black text-[10px] font-bold flex items-center justify-center">3</span>
                 <span>{t("checkout_delivery_method")}</span>
               </h2>
@@ -496,7 +496,7 @@ export default function CheckoutPage() {
 
             {/* 4. Payment Method */}
             <div className="p-6 rounded-2xl bg-white dark:bg-[#181818] border border-[#eae5de] dark:border-neutral-800 space-y-4 shadow-2xs">
-              <h2 className="text-base font-semibold text-neutral-900 dark:text-white font-serif flex items-center gap-2">
+              <h2 className="text-base font-semibold text-neutral-900 dark:text-white flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-[#121212] dark:bg-white text-white dark:text-black text-[10px] font-bold flex items-center justify-center">4</span>
                 <span>{t("checkout_payment_method")}</span>
               </h2>
@@ -632,7 +632,7 @@ export default function CheckoutPage() {
           <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-24">
             <div className="p-6 rounded-2xl bg-white dark:bg-[#181818] border border-[#eae5de] dark:border-neutral-800 shadow-sm space-y-5">
               <div className="flex items-center justify-between border-b border-[#eae5de] dark:border-neutral-800 pb-3">
-                <h3 className="text-base font-semibold text-neutral-900 dark:text-white font-serif">
+                <h3 className="text-base font-semibold text-neutral-900 dark:text-white">
                   {t("checkout_order_summary")} ({items.length})
                 </h3>
                 <span className="text-xs text-[#c5a880] font-medium">Autumn Edit</span>

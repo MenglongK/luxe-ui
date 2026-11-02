@@ -39,7 +39,7 @@ export default function FeaturedCollection() {
             <Sparkles size={12} />
             <span>Seasonal Capsule</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white font-serif">
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white">
             Essential Wardrobe Pieces
           </h2>
           <p className="mt-2 text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">

@@ -26,7 +26,7 @@ export default function EditorialStory() {
                 <span className="text-[10px] uppercase tracking-widest text-[#e4cbb0] block">
                   Look 07 / Editorial Drop
                 </span>
-                <p className="text-sm font-serif italic mt-1 text-neutral-200">
+                <p className="text-sm italic mt-1 text-neutral-200">
                   “Structure is the soul of confidence.”
                 </p>
               </div>
@@ -57,7 +57,7 @@ export default function EditorialStory() {
               <span>The Atelier Journal • Vol. IV</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white leading-[1.15] font-serif">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-neutral-900 dark:text-white leading-[1.15]">
               Sculptural Forms, <br />
               <span className="italic font-normal">Fluid Modernity</span>
             </h2>

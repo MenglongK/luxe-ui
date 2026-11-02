@@ -33,7 +33,7 @@ export default function HeroSection() {
         </div>
 
         {/* Primary Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-white max-w-4xl leading-[1.1] font-serif">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-white max-w-4xl leading-[1.1]">
           The Art of Modern <br />
           <span className="italic font-normal text-[#f4ece1]">Sartorial Tailoring</span>
         </h1>
@@ -65,7 +65,7 @@ export default function HeroSection() {
         {/* Creative Floating Micro-Pills */}
         <div className="mt-14 pt-8 border-t border-white/15 grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-12 text-left">
           <div className="flex items-center gap-3">
-            <span className="text-[#c5a880] text-xl font-serif font-bold">100%</span>
+            <span className="text-[#c5a880] text-xl font-bold">100%</span>
             <div className="text-xs">
               <strong className="block text-white font-medium">Traceable Wool</strong>
               <span className="text-neutral-400 text-[11px]">Milled in Biella, Italy</span>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           </div>
 
           <div className="flex items-center gap-3">
-            <span className="text-[#c5a880] text-xl font-serif font-bold">300+</span>
+            <span className="text-[#c5a880] text-xl font-bold">300+</span>
             <div className="text-xs">
               <strong className="block text-white font-medium">Atelier Artisans</strong>
               <span className="text-neutral-400 text-[11px]">Ethical family workshops</span>

@@ -39,7 +39,7 @@ export default function PromoBanner() {
               <span>Limited Atelier Invitation</span>
             </div>
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white font-serif leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white leading-tight">
               Enjoy 20% Off the <br />
               <span className="font-semibold text-[#f4ece1]">Minimalist Capsule Edit</span>
             </h2>

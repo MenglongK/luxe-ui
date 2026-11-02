@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   Search,
   Heart,
@@ -25,6 +26,7 @@ import MobileMenu from "./MobileMenu";
 import CartDrawer from "@/components/cart/CartDrawer";
 
 export default function Navbar() {
+  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
   const { language, toggleLanguage, t } = useLanguage();
 
@@ -112,6 +114,11 @@ export default function Navbar() {
         return label;
     }
   };
+
+  // If inside the dashboard layout, hide storefront navbar
+  if (pathname?.startsWith("/dashboard")) {
+    return null;
+  }
 
   return (
     <>
@@ -243,6 +250,14 @@ export default function Navbar() {
                   className="hidden md:inline-flex p-2 text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800 rounded-full transition"
                 >
                   <User size={18} />
+                </Link>
+
+                {/* Dashboard Shortcut */}
+                <Link
+                  href="/dashboard"
+                  className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-semibold tracking-wider uppercase border border-[#c5a880]/50 bg-[#c5a880]/10 text-[#886737] dark:text-[#dfc6a3] rounded-md hover:bg-[#c5a880]/20 transition-colors"
+                >
+                  Dashboard
                 </Link>
 
                 {/* 5. Wishlist Link with count badge - Hidden on mobile, featured in toggle menu */}

@@ -74,7 +74,7 @@ export default function WishlistPage() {
                 <Sparkles size={12} />
                 <span>Personal Capsule</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white font-serif">
+              <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900 dark:text-white">
                 {t("wishlist_title")} ({wishlistItems.length})
               </h1>
             </div>
@@ -235,7 +235,7 @@ export default function WishlistPage() {
             <div className="w-16 h-16 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center mx-auto mb-4 text-neutral-400">
               <Heart size={28} className="stroke-1" />
             </div>
-            <h2 className="text-xl font-semibold text-neutral-900 dark:text-white font-serif">
+            <h2 className="text-xl font-semibold text-neutral-900 dark:text-white">
               {t("wishlist_empty")}
             </h2>
             <p className="mt-2 text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed">
