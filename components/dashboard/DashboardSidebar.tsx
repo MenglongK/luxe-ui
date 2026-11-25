@@ -68,6 +68,7 @@ export function DashboardSidebar({ onCloseMobile }: { onCloseMobile?: () => void
     { label: "Suppliers", href: "/dashboard/suppliers", icon: Truck },
     { label: "Financial & Reports", href: "/dashboard/financial", icon: TrendingUp },
     { label: "Coupons", href: "/dashboard/coupons", icon: Ticket },
+    { label: "API Forms (RTK)", href: "/dashboard/api-forms", icon: Layers },
   ];
 
   const staffNavItems: NavItem[] = [
